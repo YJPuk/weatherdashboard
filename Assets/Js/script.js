@@ -115,3 +115,29 @@ var show5Days = function(weather){
     }
 }
 
+//Listing past searches as buttons
+var pastSearches = function(pastSearches){
+    pastListEl = document.createElement("button");
+    pastListEl.textContent = pastSearches;
+    pastListEl.classList = "d-flex w-100 btn-outline-light border p-1";
+    pastListEl.setAttribute("data-city",pastSearches)
+    pastListEl.setAttribute("type", "submit");
+    pastListButtonEl.prepend(pastListEl);
+}
+
+//Event target for selecting past searches
+var pastListEvent = function(event){
+    var city = event.target.getAttribute("data-city")
+    if(city){
+        fetchCityWeather(city);
+        fetch5Day(city);
+    }
+}
+
+//Save searches to local storage
+var savedSearch = function(){
+    localStorage.setItem("savedCities", JSON.stringify(savedCities));
+};
+
+//Click Event listener for re-searching past searches 
+pastListButtonEl.addEventListener("click", pastListEvent);
