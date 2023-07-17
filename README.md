@@ -1,5 +1,27 @@
 # 06 Server-Side APIs: Weather Dashboard
 
+# Deployed link: https://yjpuk.github.io/weatherdashboard/index.html
+
+Screenshots of page: 
+
+<hr>
+
+Description
+
+As coding student I'm trying to create a simple weather application that utilizes the weather API to display a 5 day forecast. These features match the Acceptance Criteria listed in the task below.
+
+The Weather Dashboard Application page includes
+<h4>&#x2022; A form imput to search for a city</h4> 
+<h4>&#x2022; When a city is searched the current and future weather conditions are displayed </h4> 
+<h4>&#x2022; The previous city inputs are also saved on the left in a list of search histories</h4> 
+<h4>&#x2022; Under current weather conditions they will show the city searched, date and time, weather conditions with an icon, temperature, humidity and wind speed </h4> 
+<h4>&#x2022; Under future weather conditions you are presented with a forecast of the next 5 days with dates, weather conditions with an icon, temperature, humidity and wind speed  </h4> 
+<h4>&#x2022; You can click on the specific city in your search history to search the same city again where you will be presented with current and future conditions for that city. </h4> 
+
+This was built using HTML, CSS, Javascript powered by jQuery, Dayjs, Bootstrap the OpenWeatherMap API and love.
+
+<hr>
+
 ## Your Task
 
 Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
